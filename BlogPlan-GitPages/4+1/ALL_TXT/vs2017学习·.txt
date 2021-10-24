@@ -1,0 +1,6 @@
+1.vs2017中使用的 c++核心库 放在哪个目录下， 如何更改默c++核心库  为 boost
+
+#####c++的源文件
+2.C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include
+
+vcruntime.h

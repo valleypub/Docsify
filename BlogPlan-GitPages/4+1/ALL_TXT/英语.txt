@@ -1,0 +1,5 @@
+Only code not yet mentioned in an earlier example is commented.
+
+Make sure if you use two projects they have the same name as this is used as an address for the two applications to find each other. 
+
+IMediaNetwork uses polling instead of events

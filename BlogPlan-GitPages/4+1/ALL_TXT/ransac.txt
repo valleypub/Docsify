@@ -1,0 +1,26 @@
+/// 遍历
+while iterations < k do
+    maybeInliers := n /// 从数据中随机选择n个拟合的数据组
+    maybeModel := model parameters fitted to maybeInliers /// 根据以上n个数据获得模型的参数
+    alsoInliers := empty set  /// 初始化空数据组
+    
+    for every point in data not in maybeInliers do  /// 遍历：将处maybeInliers外的其他数据组一一与模型进行比较
+        if point fits maybeModel with an error smaller than t /// 如果比较下来误差在t范围内，则调价到inliers集合中
+             add point to alsoInliers
+    end for
+    
+    if the number of elements in alsoInliers is > d then /// 如果当前得到的Inliers集合中的数据组数量大于d
+        // This implies that we may have found a good model ///意味着该模型是个“好”模型（即好参数）
+        // now test how good it is.
+        betterModel := model parameters fitted to all points in maybeInliers and alsoInliers
+        thisErr := a measure of how well betterModel fits these points
+        /// 如果当前模型的与Inliers中数据的误差比之前得到的最小误差更小，则更新最小误差，
+        /// 最优模型参数设置为当前模型参数
+        if thisErr < bestErr then
+            bestFit := betterModel
+            bestErr := thisErr
+        end if
+    end if
+    
+    increment iterations  /// 继续遍历
+end while

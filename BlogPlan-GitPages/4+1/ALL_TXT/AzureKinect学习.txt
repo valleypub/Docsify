@@ -1,0 +1,19 @@
+；
+；------------------------------------------------------
+；     tools 的使用
+；-------------------------------------------------------
+；
+
+k4aviewer.exe    和  k4arecorder.exe 不能同时用
+
+
+
+ NuGet
+
+
+dotnet CLI 工具
+
+NuGet 支持本机 C++ 包，这些包可在 Visual Studio 的 C++ 项目中使用。 这将启用项目的“管理 NuGet 包”上下文菜单命令、引入 native 目标框架，以及提供 MSBuild 集成****。
+
+
+PM》 Install-Package Microsoft.Azure.Kinect.BodyTracking -Version 1.0.1

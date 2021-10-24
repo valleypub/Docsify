@@ -1,0 +1,13 @@
+；
+；
+；每次默认安装一个软件都是，1，装在programfiles(64)  or program files(x86)中的一个，
+；                                            2，将应用入口加入C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+；                                             
+；
+
+；
+;leap motion
+C:\Program Files\Leap Motion\Core Services
+
+
+
